@@ -13,7 +13,7 @@ port 80 inside the container will be forwarded to the remote host and port
 * use `-p <host_port>:80` to define a custom port to forward where `host_port` is the port on the host that needs to be forwarded
 
 ## example
-the following will forward local host traffic from port 50001 to remote host 10.32.0.1 and port 27017
+the following will forward local host traffic from port 8080 to remote host 10.32.0.1 and port 27017
 ```
-docker run -e REMOTE_HOST=10.32.0.1 -e REMOTE_PORT=27017 -p 80:50001 port-forward
+docker run -e REMOTE_HOST=10.32.0.1 -e REMOTE_PORT=27017 -p 8080:80 port-forward
 ```
